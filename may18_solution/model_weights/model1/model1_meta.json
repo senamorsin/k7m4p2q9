@@ -1,0 +1,29 @@
+{
+  "artifact": "k7m4p2q9/model_weights/model1/model1_bundle.joblib",
+  "artifact_sha256": "807f3c287141e58103bde586866719139af60e47f4673883feb38c026dbc58b1",
+  "diagnostics": {
+    "valid_rows": 2016,
+    "valid_start": "2025-01-01 00:00:00",
+    "valid_end": "2025-03-31 23:00:00",
+    "mae_mw": 5.636259095947983,
+    "mae_norm_pct": 6.256253852756114
+  },
+  "train_summary": {
+    "train_path": "k7m4p2q9/data/raw/train_dataset_plus_may18_recent.csv",
+    "train_sha256": "c671cd668856455659b705ad5ec69bee1f97d57ea3a53e36aec2337d78e5aa7c",
+    "raw_rows": 33562,
+    "usable_rows": 33558,
+    "removed_calm_bad": 4,
+    "date_min": "2022-01-01 00:00:00",
+    "date_max": "2026-05-17 23:00:00",
+    "target_mean": 32.67650646036712,
+    "target_median": 26.63
+  },
+  "n_feature_cols": 163,
+  "dependencies": {
+    "numpy": "2.4.1",
+    "pandas": "2.3.3",
+    "lightgbm": "4.6.0",
+    "catboost": "available"
+  }
+}

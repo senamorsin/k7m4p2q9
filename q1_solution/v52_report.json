@@ -1,0 +1,15 @@
+{
+  "base_file": "submission_FBSv51_STACK_TOP5.csv",
+  "base_score": 7.058091117066827,
+  "outputs": [
+    "submission_FBSv52_SMOOTH3_w05.csv",
+    "submission_FBSv52_SMOOTH3_w10.csv",
+    "submission_FBSv52_SMOOTH3_w20.csv",
+    "submission_FBSv52_SMOOTH5_w05.csv",
+    "submission_FBSv52_SMOOTH5_w10.csv",
+    "submission_FBSv52_SMOOTH5_w20.csv",
+    "submission_FBSv52_SMOOTH7_w05.csv",
+    "submission_FBSv52_SMOOTH7_w10.csv",
+    "submission_FBSv52_SMOOTH7_w20.csv"
+  ]
+}

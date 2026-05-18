@@ -1,0 +1,16 @@
+{
+  "features_path": "data/raw/may18_features_actualized_bestmatch.csv",
+  "features_sha256": "9a4a3cb57209725da71edf558083da0ecfed376a625381c32bde3803536df49a",
+  "artifact_path": "model_weights/model1/model1_bundle.joblib",
+  "artifact_sha256": "807f3c287141e58103bde586866719139af60e47f4673883feb38c026dbc58b1",
+  "external_weather_dir": null,
+  "rows": 24,
+  "output_path": "submissions/parts/model1.csv",
+  "output_sha256": "553a2984c61501e1f2ab6146017c38c47af35adb41b3032692d60da55a8da9c3",
+  "prediction_min": 2.3304806735971524,
+  "prediction_max": 24.080258814932144,
+  "prediction_mean": 9.365213695428691,
+  "date_min": "2026-05-18 00:00:00",
+  "date_max": "2026-05-18 23:00:00",
+  "validation": "passed"
+}

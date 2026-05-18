@@ -1,0 +1,11 @@
+*.csv -text
+*.lgb -text
+*.joblib -text
+*.pkl -text
+*.docx -text
+*.odt -text
+*.png -text
+*.json -text
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf

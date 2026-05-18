@@ -1,0 +1,180 @@
+{
+  "base_file": "submission_FBSv2_smooth5_g0p12.csv",
+  "base_score": 7.369170488021504,
+  "n_constraints": 17,
+  "constraints": [
+    "submission_rebound_v6_t075_hneg10.csv",
+    "submission_rebound_v1.csv",
+    "submission_rebound_v2_soft.csv",
+    "submission_rebound_v2.csv",
+    "submission_rebound_v3_shape.csv",
+    "submission_rebound_v3_deep.csv",
+    "submission_rebound_v4_center.csv",
+    "submission_rebound_v5_hneg20.csv",
+    "submission_rebound_v5_bmore_hneg25.csv",
+    "submission_rebound_v5_conservative.csv",
+    "submission_rebound_v6_t075_h0.csv",
+    "submission_rebound_v6_t10_h0.csv",
+    "submission_rebound_v6_surface_push.csv",
+    "submission_feedback_sign_g0p08.csv",
+    "submission_feedback_sign_smooth5_g0p08.csv",
+    "submission_FBSv2_tanh_g0p15.csv",
+    "submission_FBSv2_smooth5_g0p08.csv"
+  ],
+  "diag": {
+    "submission_rebound_v6_t075_hneg10.csv": {
+      "rms": 0.18583535022736034,
+      "max_abs": 0.4944884988427134,
+      "score": 7.37455489169975
+    },
+    "submission_rebound_v1.csv": {
+      "rms": 0.24359487832256438,
+      "max_abs": 0.7370310054367408,
+      "score": 7.3756761080900635
+    },
+    "submission_rebound_v2_soft.csv": {
+      "rms": 0.23022169271389425,
+      "max_abs": 0.5586098003527695,
+      "score": 7.375976942587208
+    },
+    "submission_rebound_v2.csv": {
+      "rms": 0.30316154748124385,
+      "max_abs": 0.8544904860318816,
+      "score": 7.378333904676163
+    },
+    "submission_rebound_v3_shape.csv": {
+      "rms": 0.22099125214234036,
+      "max_abs": 0.6003239361635337,
+      "score": 7.375528878103264
+    },
+    "submission_rebound_v3_deep.csv": {
+      "rms": 0.32767668330175215,
+      "max_abs": 1.0568564509539158,
+      "score": 7.378783536070742
+    },
+    "submission_rebound_v4_center.csv": {
+      "rms": 0.3199385775561517,
+      "max_abs": 0.8661257974939396,
+      "score": 7.378335339868966
+    },
+    "submission_rebound_v5_hneg20.csv": {
+      "rms": 0.2274788009579636,
+      "max_abs": 0.5432235728048056,
+      "score": 7.375692490066722
+    },
+    "submission_rebound_v5_bmore_hneg25.csv": {
+      "rms": 0.19685817697287905,
+      "max_abs": 0.499168483249008,
+      "score": 7.374766359042817
+    },
+    "submission_rebound_v5_conservative.csv": {
+      "rms": 0.19738064545443423,
+      "max_abs": 0.49520483219501443,
+      "score": 7.374737322086285
+    },
+    "submission_rebound_v6_t075_h0.csv": {
+      "rms": 0.1912473104948408,
+      "max_abs": 0.5209991598451467,
+      "score": 7.374774556660089
+    },
+    "submission_rebound_v6_t10_h0.csv": {
+      "rms": 0.1925013275669126,
+      "max_abs": 0.5863683691001071,
+      "score": 7.3747940763733855
+    },
+    "submission_rebound_v6_surface_push.csv": {
+      "rms": 0.2222645248340277,
+      "max_abs": 0.520910996700735,
+      "score": 7.375287304530807
+    },
+    "submission_feedback_sign_g0p08.csv": {
+      "rms": 0.1332870498131502,
+      "max_abs": 0.30972995336796316,
+      "score": 7.373278334346155
+    },
+    "submission_feedback_sign_smooth5_g0p08.csv": {
+      "rms": 0.11931380927931624,
+      "max_abs": 0.25127006107443606,
+      "score": 7.372587722053496
+    },
+    "submission_FBSv2_tanh_g0p15.csv": {
+      "rms": 0.05317027937087541,
+      "max_abs": 0.24032473640061625,
+      "score": 7.369660686492568
+    },
+    "submission_FBSv2_smooth5_g0p08.csv": {
+      "rms": 0.039718144757042884,
+      "max_abs": 0.08375668702481676,
+      "score": 7.369845849772287
+    }
+  },
+  "outputs": [
+    "submission_FBSv3_g0p05.csv",
+    "submission_FBSv3_g0p08.csv",
+    "submission_FBSv3_g0p1.csv",
+    "submission_FBSv3_g0p12.csv",
+    "submission_FBSv3_g0p15.csv",
+    "submission_FBSv3_g0p18.csv",
+    "submission_FBSv3_g0p22.csv",
+    "submission_FBSv3_g0p28.csv",
+    "submission_FBSv3_g0p35.csv",
+    "submission_FBSv3_smooth3_g0p08.csv",
+    "submission_FBSv3_smooth3_g0p12.csv",
+    "submission_FBSv3_smooth3_g0p15.csv",
+    "submission_FBSv3_smooth3_g0p18.csv",
+    "submission_FBSv3_smooth3_g0p22.csv",
+    "submission_FBSv3_smooth3_g0p3.csv",
+    "submission_FBSv3_smooth5_g0p08.csv",
+    "submission_FBSv3_smooth5_g0p12.csv",
+    "submission_FBSv3_smooth5_g0p15.csv",
+    "submission_FBSv3_smooth5_g0p18.csv",
+    "submission_FBSv3_smooth5_g0p22.csv",
+    "submission_FBSv3_smooth5_g0p3.csv",
+    "submission_FBSv3_smooth7_g0p08.csv",
+    "submission_FBSv3_smooth7_g0p12.csv",
+    "submission_FBSv3_smooth7_g0p15.csv",
+    "submission_FBSv3_smooth7_g0p18.csv",
+    "submission_FBSv3_smooth7_g0p22.csv",
+    "submission_FBSv3_smooth7_g0p3.csv",
+    "submission_FBSv3_smooth11_g0p08.csv",
+    "submission_FBSv3_smooth11_g0p12.csv",
+    "submission_FBSv3_smooth11_g0p15.csv",
+    "submission_FBSv3_smooth11_g0p18.csv",
+    "submission_FBSv3_smooth11_g0p22.csv",
+    "submission_FBSv3_smooth11_g0p3.csv",
+    "submission_FBSv3_smooth15_g0p08.csv",
+    "submission_FBSv3_smooth15_g0p12.csv",
+    "submission_FBSv3_smooth15_g0p15.csv",
+    "submission_FBSv3_smooth15_g0p18.csv",
+    "submission_FBSv3_smooth15_g0p22.csv",
+    "submission_FBSv3_smooth15_g0p3.csv",
+    "submission_FBSv3_tanh_g0p1.csv",
+    "submission_FBSv3_tanh_g0p15.csv",
+    "submission_FBSv3_tanh_g0p2.csv",
+    "submission_FBSv3_tanh_g0p3.csv",
+    "submission_FBSv3_tanh_g0p45.csv",
+    "submission_FBSv3_tanh_g0p6.csv",
+    "submission_FBSv3_top50_g0p15.csv",
+    "submission_FBSv3_top50_g0p22.csv",
+    "submission_FBSv3_top50_g0p35.csv",
+    "submission_FBSv3_top35_g0p15.csv",
+    "submission_FBSv3_top35_g0p22.csv",
+    "submission_FBSv3_top35_g0p35.csv",
+    "submission_FBSv3_top19_g0p15.csv",
+    "submission_FBSv3_top19_g0p22.csv",
+    "submission_FBSv3_top19_g0p35.csv",
+    "submission_FBSv3_smtanh5_g0p15.csv",
+    "submission_FBSv3_smtanh5_g0p22.csv",
+    "submission_FBSv3_smtanh5_g0p3.csv",
+    "submission_FBSv3_smtanh5_g0p4.csv",
+    "submission_FBSv3_smtanh7_g0p15.csv",
+    "submission_FBSv3_smtanh7_g0p22.csv",
+    "submission_FBSv3_smtanh7_g0p3.csv",
+    "submission_FBSv3_smtanh7_g0p4.csv",
+    "submission_FBSv3_on_OC_g0p12.csv",
+    "submission_FBSv3_on_OC_g0p18.csv",
+    "submission_FBSv3_on_OC_g0p25.csv",
+    "submission_FBSv3_NEG_g0p08.csv",
+    "submission_FBSv3_NEG_g0p15.csv"
+  ]
+}

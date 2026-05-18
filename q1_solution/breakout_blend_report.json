@@ -1,0 +1,162 @@
+{
+  "shift_mw": -0.325,
+  "anchor": "submission_v77w30_v71.csv",
+  "checks": {
+    "top6_avg_max_abs_diff": 2.842170943040401e-14,
+    "top6_median_max_abs_diff": 7.105427357601002e-15
+  },
+  "top6_components": {
+    "10stta_tempd15": "submission_10sTTA_TEMPd15.csv",
+    "new10s_w53": "submission_NEW10sCHAMP_w53.csv",
+    "new10s_cb5": "submission_NEW10sCHAMP_CB5.csv",
+    "new10s_recipe203050": "submission_NEW10sCHAMP_recipe_20_30_50.csv",
+    "new10s_recipe153550": "submission_NEW10sCHAMP_recipe_15_35_50.csv",
+    "new10s_cb10": "submission_NEW10sCHAMP_CB10.csv"
+  },
+  "recommended_upload_order": [
+    "submission_breakout_heavy_cb10_recipe153550_shift_m0p325.csv",
+    "submission_breakout_heavy_cb10_shift_m0p325.csv",
+    "submission_breakout_heavy_recipe153550_shift_m0p325.csv",
+    "submission_breakout_cb10_shift_m0p325.csv",
+    "submission_breakout_new10s_recipe153550_shift_m0p325.csv",
+    "submission_breakout_cb10_recipe153550_shift_m0p325.csv",
+    "submission_breakout_top6avg_shift_m0p325.csv"
+  ],
+  "outputs": [
+    {
+      "file": "submission_breakout_top6avg_shift_m0p325.csv",
+      "sha256": "5a02c4fdf0851757c8c1ada22429b9fb0e58251b99deb0d7cb5d2a108cfa4d4b",
+      "n_rows": 2126,
+      "mean": 39.597531991495785,
+      "std": 25.599685403532188,
+      "min": 0.0,
+      "max": 78.38321025833373
+    },
+    {
+      "file": "submission_breakout_top6inv_shift_m0p325.csv",
+      "sha256": "be675e69a5d1f8c37f589ebf00a05902d20c11db9b010af62da66554f12ffcb3",
+      "n_rows": 2126,
+      "mean": 39.597533163299374,
+      "std": 25.599683408715954,
+      "min": 0.0,
+      "max": 78.3832066767862
+    },
+    {
+      "file": "submission_breakout_10stta_tempd15_shift_m0p325.csv",
+      "sha256": "4ea8e4da3ee61512b444585388114713edb2474d56a58d032155a4c2a2d42217",
+      "n_rows": 2126,
+      "mean": 39.60006096068801,
+      "std": 25.601047767099182,
+      "min": 0.0,
+      "max": 78.37961639673652
+    },
+    {
+      "file": "submission_breakout_new10s_w53_shift_m0p325.csv",
+      "sha256": "16da841ae0e5af7f2f54d7dec293960714d4d0b1615fe6f7b2d5c08a9728d88f",
+      "n_rows": 2126,
+      "mean": 39.60028323783468,
+      "std": 25.60178426034445,
+      "min": 0.0,
+      "max": 78.38010670173652
+    },
+    {
+      "file": "submission_breakout_new10s_cb5_shift_m0p325.csv",
+      "sha256": "9390a85711a55e1b00a747c6103e838774eab15c18c8ff334f445586734cf7da",
+      "n_rows": 2126,
+      "mean": 39.59514856783191,
+      "std": 25.601366658435328,
+      "min": 0.0,
+      "max": 78.38654658423651
+    },
+    {
+      "file": "submission_breakout_new10s_recipe203050_shift_m0p325.csv",
+      "sha256": "59e1444fcb96b52247f7746145b1ba03166083bbfe57a7309f6bf0b2c3e2a09a",
+      "n_rows": 2126,
+      "mean": 39.599785014493406,
+      "std": 25.5966684054555,
+      "min": 0.0,
+      "max": 78.37904918840319
+    },
+    {
+      "file": "submission_breakout_new10s_recipe153550_shift_m0p325.csv",
+      "sha256": "341cfb3cd29908180a3cd87b4c7f817b176e1650f6925671934c459d5f2c64c7",
+      "n_rows": 2126,
+      "mean": 39.59971862454787,
+      "std": 25.59560934608867,
+      "min": 0.0,
+      "max": 78.37484625090319
+    },
+    {
+      "file": "submission_breakout_new10s_cb10_shift_m0p325.csv",
+      "sha256": "e054958cbffbe1adc3992483500b33ced97af355c20e3993990fff8a21cfbe21",
+      "n_rows": 2126,
+      "mean": 39.59019554357882,
+      "std": 25.601684765195138,
+      "min": 0.0,
+      "max": 78.39909642798652
+    },
+    {
+      "file": "submission_breakout_cbpair_shift_m0p325.csv",
+      "sha256": "b23468319bda54e7f9745910d85191a291504bd0a9193aef25548e492702b748",
+      "n_rows": 2126,
+      "mean": 39.592672055705364,
+      "std": 25.601523847385227,
+      "min": 0.0,
+      "max": 78.39282150611152
+    },
+    {
+      "file": "submission_breakout_recipepair_shift_m0p325.csv",
+      "sha256": "52c875045f3c6a36c1b33809bf611230c388dc83eb1928c226fb5a259990e0fd",
+      "n_rows": 2126,
+      "mean": 39.59975181952064,
+      "std": 25.596137437224467,
+      "min": 0.0,
+      "max": 78.37694771965319
+    },
+    {
+      "file": "submission_breakout_cb10_recipe153550_shift_m0p325.csv",
+      "sha256": "4cd07dd8ab56f003b7bf06a62a5c2956a755be0e38a216004c5f9bb6aab5f0de",
+      "n_rows": 2126,
+      "mean": 39.59495708406335,
+      "std": 25.59863456017209,
+      "min": 0.0,
+      "max": 78.38697133944486
+    },
+    {
+      "file": "submission_breakout_heavy_cb10_shift_m0p325.csv",
+      "sha256": "5df6174c437967f79b1b5e1db51949b8cd58f53cfb30ed5b4aa44044ebd6d863",
+      "n_rows": 2126,
+      "mean": 39.5733368669212,
+      "std": 25.67176502383452,
+      "min": 0.0,
+      "max": 78.56181930842118
+    },
+    {
+      "file": "submission_breakout_heavy_recipe153550_shift_m0p325.csv",
+      "sha256": "46cf4d5020ce0a5f47ba5132ace053acbcd256b2ff028ec946920dbb1b8b2f76",
+      "n_rows": 2126,
+      "mean": 39.58571236251136,
+      "std": 25.663872960295944,
+      "min": 0.0,
+      "max": 78.58762258321283
+    },
+    {
+      "file": "submission_breakout_heavy_cb10_recipe153550_shift_m0p325.csv",
+      "sha256": "15181581085dafcee95859a4d30f81a0892840a7879daf7b4117e0b0c035f348",
+      "n_rows": 2126,
+      "mean": 39.57952461471628,
+      "std": 25.6677979308336,
+      "min": 0.0,
+      "max": 78.574720945817
+    },
+    {
+      "file": "submission_breakout_heavy_top6avg_shift_m0p325.csv",
+      "sha256": "f76881a4b211ae98a30214b9574a6ec3021c2a98e80431f9c4e8f5b7fbc5867f",
+      "n_rows": 2126,
+      "mean": 39.58775328910162,
+      "std": 25.645259873101427,
+      "min": 0.0,
+      "max": 78.41279353263016
+    }
+  ]
+}

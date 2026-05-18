@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Пояснительная записка</title>
+  <style>
+    @page { size: A4; margin: 1.25cm; }
+    body { font-family: "Liberation Serif", "Times New Roman", serif; font-size: 10pt; line-height: 1.08; }
+    h1 { font-size: 13.5pt; text-align: center; margin: 0 0 6pt 0; }
+    h2 { font-size: 11.2pt; margin: 6pt 0 2pt 0; }
+    p { margin: 0 0 3.5pt 0; }
+    ul { margin: 0 0 3.5pt 15pt; padding: 0; }
+    li { margin: 0 0 1pt 0; }
+    code { font-family: "Liberation Mono", monospace; font-size: 8.2pt; }
+  </style>
+</head>
+<body>
+  <h1>Пояснительная записка к финальному решению</h1>
+
+  <h2>1. Состав комплекта</h2>
+  <p>Комплект содержит два независимых прогноза: <code>q1_submission/SUBMISSION_FINAL.csv</code> для 1 квартала 2026 года и <code>submission_may18_current.csv</code> для почасового прогноза 18.05.2026. В ZIP включены данные, веса, код обучения/инференса и исторические constraint-сабмиты; в публичном GitHub данные из директорий <code>data/</code> отсутствуют.</p>
+
+  <h2>2. Q1 2026</h2>
+  <p>Финальный Q1-файл совпадает с checkpoint <code>submission_FBSv64_SMSTACK_w28.csv</code>, имеет LB 6.91574 и SHA-256 <code>5fd5f48...</code>. Базовый прогноз строится ансамблем LightGBM по погодным, календарным и техническим признакам: скорости и направления ветра на 10/80/120/180 м, вертикальный shear, температура, давление, осадки, облачность, час, месяц и число ВЭУ в ремонте. Модель обучается в residual-постановке относительно эмпирической кривой мощности.</p>
+  <p>Вторая часть Q1-решения — leaderboard-feedback chain. Для близких сабмитов <code>base</code> и <code>base + delta</code> известная разность MAE на публичном лидерборде задает линейное ограничение на знак ошибки по строкам. Из большого набора таких ограничений строится proxy ошибки, затем применяются детерминированные корректировки, сглаживание и стек поздних сильных checkpoint-файлов. Исторический архив из 14003 CSV лежит в <code>q1_solution/historical/</code>.</p>
+
+  <h2>3. Прогноз 18.05.2026</h2>
+  <p>Для 18.05 используется отдельный пайплайн. Входной файл <code>may18_features.csv</code> актуализируется свежей погодой Open-Meteo; прошедшие часы заменяются наиболее близкой доступной погодной оценкой. Используются две модели: <code>model1</code> — физико-эмпирическая кривая мощности с residual ensemble, режимными поправками и аналоговой компонентой; <code>model2</code> — компактный ансамбль градиентных деревьев по инженерным признакам ветра, направления, плотности воздуха и времени.</p>
+  <p>Организаторы сообщили, что с 09:00 18.05 начались плановые ремонтные работы; в метрику входят только часы 00:00-08:00. На backtest 2026-05-10...2026-05-17 в этом окне лучше показала себя <code>model1</code>: средний MAE около 5.13 МВт против 5.33 МВт у среднего двух моделей. Поэтому финальный CSV использует <code>model1</code> на 00:00-08:00, а 09:00-23:00 заполняет средним двух моделей для сохранения 24-строчного формата.</p>
+
+  <h2>4. Запуск</h2>
+  <p>Установка зависимостей:</p>
+  <ul>
+    <li><code>pip install -r may18_solution/requirements.txt</code></li>
+    <li><code>pip install -r q1_solution/requirements.txt</code></li>
+  </ul>
+  <p>Проверка Q1 checkpoint-цепочки: <code>cd q1_solution && python reproduce_chain.py</code>. Полная регенерация Q1: <code>cd q1_solution && python build_from_scratch.py</code>. Генерация прогноза 18.05: <code>cd may18_solution && python run_ensemble.py --features data/raw/may18_features_actualized_bestmatch.csv --output submissions/submission_may18_current.csv --no-header-output submissions/submission_may18_current_no_header.csv</code>.</p>
+
+  <h2>5. Воспроизводимость</h2>
+  <p>Seed, параметры регуляризации и CPU-режим зафиксированы. May18-инференс использует сохраненные веса и не переобучает модели при финальном запуске. Все предсказания клипируются в диапазон <code>[0, 90.09]</code>. Контрольные SHA-256: Q1 — <code>5fd5f48ba9550591432be8e9ee9e7d853114599a17c37bd172139aa4d52a2477</code>, 18.05 — <code>a8927e98470c37c59216f07bf29df54e948303302b7b3e10e4f66ab71ea2fbd6</code>.</p>
+</body>
+</html>

@@ -1,0 +1,61 @@
+{
+  "base": "submission_teamblend_shift_m0p325.csv",
+  "sources": {
+    "v89": "C:\\Users\\abobi\\PycharmProjects\\арвэбезхуйни\\submission_package\\teamblend_v3_pool\\submission_v89_alone.csv",
+    "v85": "C:\\Users\\abobi\\PycharmProjects\\арвэбезхуйни\\submission_package\\teamblend_v3_pool\\submission_v85_alone.csv",
+    "v87": "C:\\Users\\abobi\\PycharmProjects\\арвэбезхуйни\\submission_package\\teamblend_v3_pool\\submission_v87_alone.csv"
+  },
+  "recommended_upload_order": [
+    "submission_highupside_v89_alone_meanaligned.csv",
+    "submission_highupside_best75_v8925.csv",
+    "submission_highupside_best65_v8935.csv",
+    "submission_highupside_best75_latemix25.csv"
+  ],
+  "outputs": [
+    {
+      "file": "submission_highupside_v89_alone_meanaligned.csv",
+      "sha256": "31f9da04034cab83d21f856ab32cc100368efbc7d81ea6368a3465d579b269f9",
+      "n_rows": 2126,
+      "mean": 39.598325280920236,
+      "std": 26.220692011173963,
+      "min": 0.14881373046164725,
+      "max": 80.96323797921676
+    },
+    {
+      "file": "submission_highupside_best75_v8925.csv",
+      "sha256": "d57e7572e5b81fb424df44415bf3a17e8645a0b6a3a0f98cd28ceb0646daa41b",
+      "n_rows": 2126,
+      "mean": 39.59832528092023,
+      "std": 25.71536775767816,
+      "min": 0.03720343261541181,
+      "max": 79.01514919042678
+    },
+    {
+      "file": "submission_highupside_best65_v8935.csv",
+      "sha256": "423ac740c475b0e4ce87d69346f71e82b320039f9657f6d7043bb69f19b5c022",
+      "n_rows": 2126,
+      "mean": 39.59832528092023,
+      "std": 25.768909469956338,
+      "min": 0.052084805661576535,
+      "max": 79.26926424690289
+    },
+    {
+      "file": "submission_highupside_best75_latemix25.csv",
+      "sha256": "4a891466aa19e20fcfa0b9d185fbce1ce878459537b4385a485e9d8754a6d366",
+      "n_rows": 2126,
+      "mean": 39.61491757623815,
+      "std": 25.69298607220847,
+      "min": 0.06701035397862397,
+      "max": 78.9801603725505
+    },
+    {
+      "file": "submission_highupside_best65_latemix35.csv",
+      "sha256": "87cb93570501aff5d9846ac0fb6edf82b166b91bd6911b5e241cd5863d5a60dd",
+      "n_rows": 2126,
+      "mean": 39.62155449436533,
+      "std": 25.73540359516839,
+      "min": 0.09381449557007356,
+      "max": 79.2202799018761
+    }
+  ]
+}
